@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Jimmy Aaron, SHU, LIC=14HV2-9IX8J-BSFYX-H8FTF-P11VC-NPPJ9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\install\keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.15
+Assembler:       Armasm.exe V6.15
+Linker/Locator:  ArmLink.exe V6.15
+Library Manager: ArmAr.exe V6.15
+Hex Converter:   FromElf.exe V6.15
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.12.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\qfgg700\Desktop\stm32\FWlib\FWlib-led\BH-F103.uvprojx
+Project File Date:  05/06/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.15', folder: 'D:\install\keil\ARM\ARMCLANG\Bin'
+Build target 'template-reg'
+main.c(30): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOB->CRL &= ~((0x0f) << 0);
+                   ~~ ^~~~~~~~~~~~~~
+main.c(34): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOB->ODR &= ~(1 << 0);
+                   ~~ ^~~~~~~~~
+main.c(41): warning: no previous prototype for function 'SystemInit' [-Wmissing-prototypes]
+void SystemInit()
+     ^
+main.c(41): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemInit()
+^
+static 
+main.c(41): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void SystemInit()
+               ^
+4 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=368 RO-data=320 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\template-reg.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\qfgg700\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
