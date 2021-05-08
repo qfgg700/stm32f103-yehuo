@@ -10,7 +10,7 @@
 
 #define RCC_APB2ENR *(unsigned int*)(RCC_BASE+0x18)
 	
-#define GPIOB_CRL *(unsigned int*)(RCC_BASE+0x00)
-#define GPIOB_CRH *(unsigned int*)(RCC_BASE+0x04)
-#define GPIOB_ODR *(unsigned int*)(RCC_BASE+0x0C)
+#define GPIOB_CRL *(unsigned int*)(GPIOB_BASE+0x00)
+#define GPIOB_CRH *(unsigned int*)(GPIOB_BASE+0x04)
+#define GPIOB_ODR *(unsigned int*)(GPIOB_BASE+0x0C)
 	

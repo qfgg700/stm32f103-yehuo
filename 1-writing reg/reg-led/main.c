@@ -2,16 +2,17 @@
 
 int main(void)
 {
+#if 0
 	//打开GPIOB端口时钟
-	//*(unsigned int*) 0x40021018 |= (1 << 3);
+	*(unsigned int*) 0x40021018 |= (1 << 3);
 	
 	//配置IO口为输出
-	//*(unsigned int*) 0X40010C00 &= ~((0x0f) << 0);寄存器清零
-	//*(unsigned int*) 0X40010C00 |= (1 << 0);
+	*(unsigned int*) 0X40010C00 &= ~((0x0f) << 0);//寄存器清零
+	*(unsigned int*) 0X40010C00 |= (1 << 0);
 	
 	//配置ODR寄存器
-	//*(unsigned int*) 0X40010C0C &= ~(1 << 0);
-	
+	*(unsigned int*) 0X40010C0C &= ~(1 << 0);
+#elif 1
 	//打开GPIOB端口时钟
 	RCC_APB2ENR |= (1 << 3);
 	
@@ -20,8 +21,9 @@ int main(void)
 	GPIOB_CRL |= (1 << 0);
 	
 	//配置ODR寄存器
-	GPIOB_ODR &= ~(1 << 0);
-	
+	GPIOB_ODR &= ~(1 << 0);//开
+	//GPIOB_ODR |= (1<<0);//关
+#endif
 }
 
 //置位 |=

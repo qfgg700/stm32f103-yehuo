@@ -21,39 +21,40 @@ Target DLL:      CMSIS_AGDI.dll V1.32.12.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-C:\Users\qfgg700\Desktop\stm32\reg-led\BH-F103.uvprojx
-Project File Date:  05/06/2021
+C:\Users\qfgg700\Desktop\stm32\1-writing reg\reg-led\BH-F103.uvprojx
+Project File Date:  05/08/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.15', folder: 'D:\install\keil\ARM\ARMCLANG\Bin'
-Build target 'template-reg'
+Rebuild target 'template-reg'
 main.c(1): warning: In file included from...
 ./stm32f10x.h(16): warning: no newline at end of file [-Wnewline-eof]
         
         ^
-main.c(19): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+main.c(20): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         GPIOB_CRL &= ~((0x0f) << 0);
                   ~~ ^~~~~~~~~~~~~~
-main.c(23): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
-        GPIOB_ODR &= ~(1 << 0);
+main.c(24): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOB_ODR &= ~(1 << 0);//<BF><AA>
                   ~~ ^~~~~~~~~
-main.c(35): warning: no newline at end of file [-Wnewline-eof]
-//<B2><C9><D3><C3>BSRR,BRR<A3><AC><B5><E3><C1><C1>LED
-                                                     ^
-main.c(30): warning: no previous prototype for function 'SystemInit' [-Wmissing-prototypes]
+main.c(38): warning: no newline at end of file [-Wnewline-eof]
+//<D1><D3>ʱ<C9><C1>˸
+                    ^
+main.c(32): warning: no previous prototype for function 'SystemInit' [-Wmissing-prototypes]
 void SystemInit()
      ^
-main.c(30): note: declare 'static' if the function is not intended to be used outside of this translation unit
+main.c(32): note: declare 'static' if the function is not intended to be used outside of this translation unit
 void SystemInit()
 ^
 static 
-main.c(30): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+main.c(32): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
 void SystemInit()
                ^
 6 warnings generated.
 compiling main.c...
+assembling startup_stm32f10x_hd.s...
 linking...
-Program Size: Code=360 RO-data=320 RW-data=0 ZI-data=1632  
+Program Size: Code=368 RO-data=320 RW-data=0 ZI-data=1632  
 FromELF: creating hex file...
 ".\Objects\template-reg.axf" - 0 Error(s), 6 Warning(s).
 
